@@ -1,5 +1,5 @@
 # Autolevel-Gcodes
-Autolevel Gcodes for adjusting Z probe offset and starting autolevel procedure
+Autolevel Gcodes for adjusting Z probe offset and starting autolevel procedure, you need a 3D/Bltouch or any automatic probe.
 
 ## Usage
 
