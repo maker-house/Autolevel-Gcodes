@@ -37,13 +37,13 @@ Códigos G de nivelacion automática para ajustar el desfase Z de la sondae inic
 ## Ajuste de desfase en Z de sonda
 0. Hacer home
 
-1. Utilice un papel para calibrar el desfase z, avance manualmente hacia la pocision Z0 hasta que el papel se frene, si llega a Z0 pero la boquilla está demasiado lejos, reduzca el desplazamiento Z, si el papel está demasiado apretado, aumente el desplazamiento z
-2. Si no cuenta con home Z  en el menú, use el código G28 Z0.gcode (asi no necesita hacer home en todos los ejes, X e Y)
-3. Repita 1-3 hasta que el papel se deslice entre la cama y la boquilla con poca dificultad.
+1. Utilice un papel para calibrar el desfase z, avance manualmente en pasos de 1 o 0.1mm hacia la posicion Z0 hasta que el papel se frene suavemente entre la boquilla y la cama, si llega a Z0 pero la boquilla está demasiado lejos, reduzca el desfase Z, si el papel está demasiado apretado, aumente el desfase z
+2. Si no cuenta con home Z en el menú, use el código G28 Z0.gcode (asi no necesita hacer home en todos los ejes, X e Y)
+3. Repita 1-3 hasta que el papel se deslice entre la cama y la boquilla con algo de roce.
 
 
 ## Nivelacion automática
-Después de ajustar el desplazamiento Z
+Después de ajustar el desfase Z
 1. Use G29.gcode para iniciar el procedimiento de autonivelación, finalizará automáticamente y guardará los puntos
 2. Agregue "M420 S1; Cargar puntos de nivel automático" a su gcode de inicio en su cortadora, después de la línea G28 debería ser algo como:
 ``` 
