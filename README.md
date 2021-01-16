@@ -17,7 +17,7 @@ Autolevel Gcodes for adjusting Z probe offset and starting autolevel procedure, 
 
 ## Autolevel
 After adjusting Z offset
-1. Use G29.gcode to start autolevel procedure, it will automatically finish and save the points
+1. Use file G29.gcode to start autolevel procedure, it will automatically finish and save the points
 2. Add "M420 S1; Load autolevel points" to your start gcode in your slicer, after the G28 line it should be something like: 
 ``` 
 G28 ; Home all
@@ -44,7 +44,7 @@ Códigos G de nivelacion automática para ajustar el desfase Z de la sondae inic
 
 ## Nivelacion automática
 Después de ajustar el desfase Z
-1. Use G29.gcode para iniciar el procedimiento de autonivelación, finalizará automáticamente y guardará los puntos
+1. Use el archivo G29.gcode para iniciar el procedimiento de autonivelación, finalizará automáticamente y guardará los puntos
 2. Agregue "M420 S1; Cargar puntos de nivel automático" a su gcode de inicio en su cortadora, después de la línea G28 debería ser algo como:
 ``` 
 G28 ; Home all
